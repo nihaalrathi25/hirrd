@@ -1,12 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': '/src',
-    },
-  },
+  preview: {
+    allowedHosts: ['hirrd-2.onrender.com'], // ✅ Add your Render domain here
+  }
 })
