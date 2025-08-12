@@ -1,5 +1,5 @@
 import { Heart, MapPinIcon, Trash2Icon } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../components/ui/button.jsx";
 import {
   Card,
   CardContent,
@@ -8,8 +8,8 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Link } from "react-router-dom";
-import useFetch from "@/hooks/use-fetch";
-import { deleteJob, saveJob } from "@/api/apijobs";
+import useFetch from "../hooks/use-fetch.jsx";
+import { deleteJob, saveJob } from "../api/apijobs.js";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
 import { BarLoader } from "react-spinners";

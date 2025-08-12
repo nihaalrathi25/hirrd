@@ -1,7 +1,7 @@
 import { useUser } from "@clerk/clerk-react";
-import ApplicationCard from "./application-card";
+import ApplicationCard from "../components/application-card.jsx";
 import { useEffect } from "react";
-import { getApplications } from "@/api/apiApplications";
+import { getApplications } from "../api/apiApplications.js";
 import useFetch from "@/hooks/use-fetch";
 import { BarLoader } from "react-spinners";
 

@@ -1,8 +1,8 @@
-import { getMyJobs } from "@/api/apijobs";
-import useFetch from "@/hooks/use-fetch";
+import { getMyJobs } from "../api/apijobs.js";
+import useFetch from "../hooks/use-fetch.jsx";
 import { useUser } from "@clerk/clerk-react";
 import { BarLoader } from "react-spinners";
-import JobCard from "./job-card";
+import JobCard from "../components/job-card.jsx";
 import { useEffect } from "react";
 
 const CreatedJobs = () => {

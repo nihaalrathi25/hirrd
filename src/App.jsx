@@ -4,16 +4,16 @@ import viteLogo from '/vite.svg'
 import "./App.css" 
 import { Button } from './components/ui/button'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import AppLayout from './layouts/app-layout'
-import LandingPage from './pages/landing'
+import AppLayout from './layouts/app-layout.jsx'
+import LandingPage from './pages/landing.jsx'
 import OnBoarding from './pages/onboarding.jsx'
-import JobListing from './pages/job-listing'
-import JobPage from './pages/job'
-import SavedJobs from './pages/saved-jobs'
-import PostJob from './pages/post-job'
-import MyJobs from './pages/my-jobs'
-import { ThemeProvider } from './components/theme-provider';
-import ProtectedRoute from './components/protected-route'
+import JobListing from './pages/job-listing.jsx'
+import JobPage from './pages/job.jsx'
+import SavedJobs from './pages/saved-jobs.jsx'
+import PostJob from './pages/post-job.jsx'
+import MyJobs from './pages/my-jobs.jsx'
+import { ThemeProvider } from './components/theme-provider.jsx';
+import ProtectedRoute from './components/protected-route.jsx'
 
 const router = createBrowserRouter([
   {

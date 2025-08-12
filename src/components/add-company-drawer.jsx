@@ -12,10 +12,10 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import useFetch from '@/hooks/use-fetch';
-import { addNewCompany } from '@/api/apiCompanies';
+import { Button } from './ui/button.jsx';
+import { Input } from './ui/input.jsx';
+import useFetch from '../hooks/use-fetch.jsx';
+import { addNewCompany } from '@/api/apiCompanies.js';
 import { BarLoader } from 'react-spinners';
 
 const schema = z.object({

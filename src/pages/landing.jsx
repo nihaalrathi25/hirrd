@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Button } from "../components/ui/button.jsx";
+import { Carousel, CarouselContent, CarouselItem } from "../components/ui/carousel.jsx";
 import React from "react";
 import { Link } from "react-router-dom";
 import companies from '../data/companies.json';
 import faqs from '../data/faq.json';
 import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Accordion,AccordionContent,AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card.jsx";
+import { Accordion,AccordionContent,AccordionItem, AccordionTrigger } from "../components/ui/accordion.jsx";
 const LandingPage=()=>{
     return <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-20">
         <section className="text-center">

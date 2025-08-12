@@ -1,5 +1,5 @@
-import CreatedApplications from '@/components/created-applications';
-import CreatedJobs from '@/components/created-jobs';
+import CreatedApplications from '../components/created-applications.jsx';
+import CreatedJobs from '../components/created-jobs.jsx';
 import { useUser } from '@clerk/clerk-react'
 import React from 'react'
 import { BarLoader } from 'react-spinners';

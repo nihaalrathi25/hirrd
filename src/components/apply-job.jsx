@@ -8,16 +8,16 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+} from "../components/ui/drawer.jsx";
+import { Label } from "../components/ui/label.jsx";
+import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group.jsx";
+import { Button } from "../components/ui/button.jsx";
+import { Input } from "../components/ui/input.jsx";
 import z from "zod";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import useFetch from "@/hooks/use-fetch";
-import { applyToJob } from "@/api/apiApplications";
+import useFetch from "../hooks/use-fetch.jsx";
+import { applyToJob } from "../api/apiApplications.js";
 import { BarLoader } from "react-spinners";
 
 const schema = z.object({

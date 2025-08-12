@@ -1,5 +1,5 @@
-import { getSingleJob, updateHiringStatus } from "@/api/apijobs";
-import useFetch from "@/hooks/use-fetch";
+import { getSingleJob, updateHiringStatus } from "../api/apijobs.js";
+import useFetch from "../hooks/use-fetch.jsx";
 import { useUser } from "@clerk/clerk-react";
 import MDEditor from "@uiw/react-md-editor";
 import {

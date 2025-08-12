@@ -5,7 +5,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./ui/card";
+} from "./ui/card.jsx";
 import {
   Select,
   SelectContent,
@@ -14,10 +14,10 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../components/ui/select.jsx";
 import { Boxes, BriefcaseBusiness, Download, School } from "lucide-react";
-import useFetch from "@/hooks/use-fetch";
-import { updateApplicationStatus } from "@/api/apiApplications";
+import useFetch from "../hooks/use-fetch.jsx";
+import { updateApplicationStatus } from "@/api/apiApplications.js";
 import { BarLoader } from "react-spinners";
 
 const ApplicationCard = ({ application, isCandidate = false }) => {

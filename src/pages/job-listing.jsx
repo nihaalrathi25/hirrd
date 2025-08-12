@@ -1,8 +1,8 @@
-import { getCompanies } from "@/api/apiCompanies";
-import { getjobs } from "@/api/apijobs";
-import JobCard from "@/components/job-card";
-import { Button } from "@/components/ui/button.jsx";
-import { Input } from "@/components/ui/input";
+import { getCompanies } from "../api/apiCompanies.js";
+import { getjobs } from "../api/apijobs.js";
+import JobCard from "../components/job-card.jsx";
+import { Button } from "../components/ui/button.jsx";
+import { Input } from "../components/ui/input.jsx";
 import {
   Select,
   SelectContent,
