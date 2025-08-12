@@ -9,4 +9,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  preview: {
+    // Allow your Render deployment host
+    allowedHosts: [".onrender.com"],
+  },
 });
