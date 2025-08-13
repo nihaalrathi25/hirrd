@@ -35,7 +35,7 @@ const Header = () => {
 
         <div className='"flex gap-8'>
           <SignedOut>
-            <Button variant="outline" onClick={() => setshowSignIn(true)}>
+            <Button variant="outline" onClick={() => setshowSignIn(true)} className="text-white  bg-rgb(10, 2, 31)">
               Login
             </Button>
           </SignedOut>
@@ -62,11 +62,11 @@ const Header = () => {
                   labelIcon={<BriefcaseBusiness size={15}/>}
                   href="/my-jobs"
                 />
-                 <UserButton.Link
+                 {/* <UserButton.Link
                   label="Saved Jobs"
                   labelIcon={<Heart size={15}/>}
                   href="/saved-jobs"
-                />
+                /> */}
               </UserButton.MenuItems>
 
             </UserButton>

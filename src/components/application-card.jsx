@@ -38,7 +38,7 @@ const ApplicationCard = ({ application, isCandidate = false }) => {
     fnHiringStatus(status);
   };
   return (
-    <Card>
+    <Card className='text-white bg-[rgb(10,2,31)]'>
       {loadingHiringStatus && (
         <BarLoader className="mb-4" width={"100%"} color="#36d7b7" />
       )}
@@ -78,17 +78,7 @@ const ApplicationCard = ({ application, isCandidate = false }) => {
             Status:{application?.status}
           </span>
         ) : (
-          <Select onValueChange={handleStatusChange} defaultValue={application.status}>
-            <SelectTrigger className="w-52">
-              <SelectValue placeholder="Application Status" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="applied">Appied</SelectItem>
-              <SelectItem value="interviewing">Interviewing</SelectItem>
-              <SelectItem value="hired">Hired</SelectItem>
-              <SelectItem value="rejected">Rejected</SelectItem>
-            </SelectContent>
-          </Select>
+          <span>Applied</span>
         )}
       </CardFooter>
     </Card>

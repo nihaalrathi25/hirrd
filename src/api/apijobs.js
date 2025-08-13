@@ -183,3 +183,18 @@ export async function deleteJob(token, { job_id }) {
 
   return data;
 }
+export const deleteSavedJob = async (token, { user_id, job_id }) => {
+  const supabase = await supabaseClient(token);
+
+  const { data, error } = await supabase
+    .from("saved_jobs")
+    .delete()
+    .eq("user_id", user_id)
+    .eq("job_id", job_id);
+
+  if (error) {
+    console.error("Error deleting saved job:", error);
+    return null;
+  }
+  return data;
+};

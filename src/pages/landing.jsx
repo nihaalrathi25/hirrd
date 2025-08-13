@@ -42,7 +42,7 @@ const LandingPage=()=>{
        <img src="/banner.jpeg" className="w-full"></img>
        <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* {cards} */}
-        <Card>
+        <Card className="text-white bg-rgb(10, 2, 31)">
             <CardHeader>
                 <CardTitle>
                    For Job Seekers 
@@ -52,7 +52,7 @@ const LandingPage=()=>{
                 Search and apply for jobs,track applications,and more.
             </CardContent>
         </Card>
-        <Card>
+        <Card className="text-white bg-rgb(10, 2, 31)">
             <CardHeader>
                 <CardTitle>
                    For Employers 
@@ -65,7 +65,7 @@ const LandingPage=()=>{
 
        </section>
        {/* accordian */}
-       <Accordion type="multiple" className="w-full">
+       <Accordion type="multiple" className="w-full text-white">
         {faqs.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index + 1}`}>
             <AccordionTrigger>{faq.question}</AccordionTrigger>
